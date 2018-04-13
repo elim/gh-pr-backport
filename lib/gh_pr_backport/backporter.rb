@@ -89,7 +89,11 @@ class GhPrBackport::Backporter
 
   def repo
     remote = `git config remote.origin.url`.chomp
-    repo_name = URI.parse(remote).path.sub(%r{^\/}, '').sub(/.git$/, '')
+    repo_name = if remote.start_with?('git@github.com:')
+                  remote.split(':', 2)[1].sub(/.git$/, '')
+                else
+                  URI.parse(remote).path.sub(%r{^\/}, '').sub(/.git$/, '')
+                end
     Octokit::Repository.new(repo_name)
   end
 
