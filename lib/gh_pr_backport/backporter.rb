@@ -1,6 +1,5 @@
 require 'uri'
 
-require 'bundler/setup'
 require 'hashie'
 require 'octokit'
 
