@@ -1,4 +1,3 @@
-require 'gh_pr_backport/backporter'
 require 'gh_pr_backport/version'
 
 module GhPrBackport
@@ -7,4 +6,6 @@ module GhPrBackport
   class DirectoryIsMessy < StandardError; end
   class FetchFailed < StandardError; end
   class PushFailed < StandardError; end
+
+  autoload :Backporter, 'gh_pr_backport/backporter'
 end
