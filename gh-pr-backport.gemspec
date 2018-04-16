@@ -35,6 +35,6 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency 'rake', '~> 10.0'
   spec.add_development_dependency 'rspec', '~> 3.0'
   spec.add_development_dependency 'rubocop-codetakt', '~> 0.8.2'
-  spec.add_dependency 'hashie', '~> 3.5.7'
-  spec.add_dependency 'octokit', '~> 4.8.0'
+  spec.add_runtime_dependency 'hashie', '~> 3.5', '>= 3.5.7'
+  spec.add_runtime_dependency 'octokit', '~> 4.8', '>= 4.8.0'
 end

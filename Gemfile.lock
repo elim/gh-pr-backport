@@ -2,8 +2,8 @@ PATH
   remote: .
   specs:
     gh-pr-backport (0.1.0)
-      hashie (~> 3.5.7)
-      octokit (~> 4.8.0)
+      hashie (~> 3.5, >= 3.5.7)
+      octokit (~> 4.8, >= 4.8.0)
 
 GEM
   remote: https://rubygems.org/
