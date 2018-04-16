@@ -18,8 +18,8 @@ module GhPrBackport
       raise GhPrBackport::DirectoryIsMessy unless clean?
       checkout_backport_branch
       cherry_pick
-      # push
-      # create_backport_pull_request
+      push
+      create_backport_pull_request
     end
 
     private
