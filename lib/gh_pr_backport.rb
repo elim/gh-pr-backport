@@ -8,4 +8,6 @@ module GhPrBackport
   class PushFailed < StandardError; end
 
   autoload :Backporter, 'gh_pr_backport/backporter'
+  autoload :AtOnceBackporter, 'gh_pr_backport/at_once_backporter'
+  autoload :Common, 'gh_pr_backport/common'
 end
