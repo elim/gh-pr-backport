@@ -1,0 +1,6 @@
+#!/usr/bin/env ruby
+
+require 'gh_pr_backport'
+
+backporter = GhPrBackport::AtOnceBackporter.new
+backporter.run
